@@ -1,0 +1,14 @@
+{
+    "name": "Conda Environment Setup",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-20.04",
+    "settings": 
+    {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": 
+    [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+    ],
+    "postCreateCommand": "/bin/bash .devcontainer/setup-conda.sh"
+}
