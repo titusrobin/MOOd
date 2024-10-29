@@ -12,14 +12,14 @@ MMD3D_VERSION="0.17.1"
 NUSCENES_DEVKIT_VERSION="1.1.0"  # Version for the nuScenes devkit
 
 # Define paths
-NUSCENES_PATH="./nuscenes"  # Path to download the nuScenes dataset
-PETR_PATH="./PETR"          # Path for the PETR model
+NUSCENES_PATH="/hpc/group/ssri/nuscenes"  # Path to download the nuScenes dataset
 # Download and extract nuScenes mini dataset
 
 # Create directory for nuScenes dataset
 mkdir -p $NUSCENES_PATH
 
 # # Download and extract nuScenes mini dataset
+cd $NUSCENES_PATH
 wget https://www.nuscenes.org/data/v1.0-mini.tgz -O nuscenes_mini.tgz
 tar -xf nuscenes_mini.tgz -C $NUSCENES_PATH
 
