@@ -5,8 +5,8 @@ sudo apt-get update
 sudo apt-get install -y libgl1-mesa-glx
 
 # Define versions for installations
-MMCV_VERSION="1.4.0"
-MMDET_VERSION="2.24.1"
+MMCV_VERSION="1.3.14"
+MMDET_VERSION="2.16.0"
 MMD3D_VERSION="0.17.1"
 NUSCENES_DEVKIT_VERSION="1.1.0"  # Version for the nuScenes devkit
 
@@ -27,6 +27,7 @@ pip install nuscenes-devkit==$NUSCENES_DEVKIT_VERSION
 
 # Install MMCV (CPU version)
 pip install mmcv-full==$MMCV_VERSION -f https://download.openmmlab.com/mmcv/dist/cpu/torch1.9.0/index.html
+pip install mmsegmentation==0.17.0
 
 # Install MMDetection
 git clone https://github.com/open-mmlab/mmdetection.git
