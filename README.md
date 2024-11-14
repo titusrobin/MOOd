@@ -34,7 +34,7 @@ This section describes what is within this repository and our deliverables for t
 
 insert link here 
 
-### Data exploration and description
+### 2. Data exploration and description
 
 One specific question raised by our stakeholders is whether we can study how changes in the visibility levels of traffic cones affect model performance. To address this, we aim to design an experiment that investigates this relationship. As a first step, we analyzed the distribution of visibility levels for traffic cones. Visibility is defined as the fraction of pixels of each annotation visible across six camera feeds and is categorized into four bins: 0-40%, 40-60%, 60-80%, and 80-100%. For instance, a traffic cone with 80-100% visibility indicates that it is almost fully or completely visible. This analysis will help inform the design of our experiment and deepen our understanding of the data distribution.
 
@@ -42,9 +42,9 @@ One specific question raised by our stakeholders is whether we can study how cha
 
 Based on the visualization, our analysis of 1,378 traffic cones from the nuScenes mini dataset shows that 74% fall within the 80-100% visibility bin, indicating that most cones are highly visible. In contrast, 19% fall within the 0-40% visibility bin, 2% in the 40-60% bin, and 5% in the 60-80% bin. These findings suggest that our dataset is imbalanced, with a significant concentration of cones in the highest visibility bin. If we want to study the effect of traffic cone visibility levels on model performance, to ensure a balanced design for future experiments, we may need to subset the dataset to match the number of cones in the smallest visibility bin (40-60%).
 
-### Dataset Prep Toolkit 
+### 3. Dataset Prep Toolkit 
 
-### YOLO Baseline Model Implementation
+### 4. YOLO Baseline Model Implementation
 
 ## Next Steps
 
