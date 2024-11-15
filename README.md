@@ -2,7 +2,7 @@
 #### Duke University MIDS Capstone Project 2024-2025
 **Authors:** Robin Arun, Katie Hucker, Afraa Noureen, Jiayi Zhou
 
-## Project Overview 
+## I. Project Overview 
 
 This project will develop an object detection tool to identify partially obscured objects while leveraging multiple images or views of the object. Current single-view detection methods lack in the ability to render scene contextualization, or reference images near by into its object detection capabilities. We believe by using multi-view modeling techniques obscured objects can be identified quicker, more accurately, and with less dense data. Multi-view models are more computationally complex, therefore, we wish to understand the relationship and improvement when compared to single view detection methods. 
 
@@ -20,7 +20,7 @@ Driving Questions:
 - What is the minimum number of scene views required to achieve reliable detection?
 - Which object features most significantly contribute to accurate detection?
 
-## Semester Contributions and Findings
+## II. Semester Contributions and Findings
 
 This section describes what is within this repository and our deliverables for the Fall 2024 Semester. 
 
@@ -61,7 +61,7 @@ You will find the YOLO Baseline Model folder within the repository called `Basel
 1. `create_dataset.py`: This script is responsible for extracting traffic cone data from the nuScenes dataset and preparing it for use with a YOLO object detection model.
 2. `traffic_cone_detector.py`: This script defines the `TrafficConeDetector` class, which is used for training, validating, and using the YOLO object detection model to detect traffic cones.
 
-## How to launch the project
+## III. How to launch the project
 
 ### 1. Prepare Data
 
