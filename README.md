@@ -59,7 +59,7 @@ This section describes what is within this repository and our deliverables for t
 
 
 ### 1. Write Up
-INSERT LINK HERE
+Detailed write-up can be found ![here](communications/Write-Up Capstone.pdf)
 
 The write-up provides an in-depth exploration of the project, organized into the following sections: 
 
