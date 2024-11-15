@@ -61,6 +61,22 @@ This section describes what is within this repository and our deliverables for t
 ### 1. Write Up
 INSERT LINK HERE
 
+The write-up provides an in-depth exploration of the project, organized into the following sections: 
+
+- **Problem Statement and Motivation**:  
+  Discusses the challenges of detecting partially occluded objects in real-world environments and highlights the potential of multi-view models (like DETR3D) to outperform traditional single-view models (e.g., YOLO) in detecting such objects.
+- **Goal**:  
+  Defines the objective of the project:  
+  *To evaluate and improve object detection performance under partial occlusion by comparing single-view and multi-view detection models, using traffic cones as a representative test case.*
+- **Literature Review - Data and Models**:  
+  Reviews relevant datasets and models for object detection, focusing on large, annotated image datasets for model training. It highlights the scarcity of unique multi-view detection models, discusses several models commonly used, and evaluates their suitability for the project, considering their strengths and limitations. 
+- **Data Overview and Discussion**:  
+  Details the preparation and filtering of the **nuScenes** dataset, focusing on traffic cones, and discusses the challenges related to visibility distribution and the impact of occlusion on model performance. 
+- **Methodologies**:   
+  Describes the methodology, beginning with YOLO as the baseline model for single-view detection, and progressing to DETR3D, a multi-view 3D detection model, to increase robustness and accuracy, particularly for detecting occluded objects.
+- **Conclusion & Next Steps**:   
+  Outlines the future directions of the project, including finalizing the DETR3D model, testing on the full dataset, and further exploration of occlusion's impact on detection performance and model optimization.
+
 ### 2. Dataset Prep Toolkit 
 
 You will find the toolkit folder within the repository. The following steps is what the toolkit does:
