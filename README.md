@@ -42,7 +42,7 @@ Among 23 object classes, we selected traffic cones due to their symmetrical shap
 
 Specifically, we examined 1,378 traffic cones from the nuScenes mini dataset, finding that 74% fall in the 80-100% visibility bin, indicating most cones are highly visible. In contrast, 19% are in the 0-40% bin, 2% in the 40-60% bin, and 5% in the 60-80% bin. These findings reveal an imbalance in visibility levels, with a concentration of cones in the highest visibility bin. The predominance of highly visible cones (74%) enables our model to learn full representations of the data, supporting broader research goals. However, to ensure a balanced approach in studying visibility effects on model performance, we may need to subset the dataset to align with the number of cones in the smallest visibility bin (40-60%).
 
-### 3. Dataset Prep Toolkit 
+### 2. Dataset Prep Toolkit 
 
 You will find the toolkit folder within the repository. The following steps is what the toolkit does:
 
@@ -52,7 +52,7 @@ You will find the toolkit folder within the repository. The following steps is w
 
 Time note: 85 scenes take approximately 45 mins to filter. 
 
-### 4. YOLO Baseline Model Implementation
+### 3. YOLO Baseline Model Implementation
 You will find the YOLO Baseline Model folder within the repository called `Baseline_YOLO/code`. YOLO object detection model is used as baseline to detect traffic cones. It includes scripts to extract and prepare a dataset from the nuScenes dataset, as well as to train, validate, and use the detection model.
 
 #### Files
