@@ -10,6 +10,30 @@ To address this, we will first establish a baseline model, single-view model. We
 
 You can find further discussion within our write-up document linked below.
 
+Here is the file structure of our software package: 
+
+- Baseline_YOLO/
+  - code/
+    - YOLO_Documentation.md
+    - dataset_creation.py
+    - traffic_cone_detector.py
+
+- Data_Toolkit/
+  - nuscenes/
+    - cone_samples.json
+    - load_data.py
+  - toolkit_instructions.txt
+
+- In_Progress_DETR3D/
+  - 00_setup_downloads.sh
+  - 10_setup_installs.sh
+  - Afraa_DETR3D_Trial.ipynb
+  - PETR.ipynb
+  - detr_base_w_nuScenes.ipynb
+
+- communications/
+  - 11_8_capstone_class.pdf
+
 ## II. Semester Contributions and Findings
 
 This section describes what is within this repository and our deliverables for the Fall 2024 Semester. 
