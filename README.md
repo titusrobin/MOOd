@@ -104,20 +104,19 @@ For more information, please see the [Toolkit README](MOOd/toolkit_instructions.
 
 ### 2. Baseline Model--YOLO
 #### Prerequisites
-Ensure you have the following installed:
-- Python 3.8+
-- `torch`, `opencv-python`, `Pillow`, `seaborn`, `matplotlib`, and `ultralytics` packages (for YOLOv8)
-
-Install the required packages:
-```bash
-pip install torch ultralytics opencv-python pillow seaborn matplotlib
-```
-
+- Ensure the following are installed:
+  - Python 3.8+
+  - Packages: `torch`, `opencv-python`, `Pillow`, `seaborn`, `matplotlib`, `ultralytics`
+- To install the required packages, run:
+  ```bash
+  pip install torch ultralytics opencv-python pillow seaborn matplotlib
+  ```
+  
 #### Usage
-1. Ensure you have the nuScenes dataset downloaded and the path set in `Baseline_YOLO/code`.
-2. Run `create_dataset.py` to generate the YOLO dataset.
-4. Customize the training parameters in `traffic_cone_detector.py` as needed.
-5. Run `traffic_cone_detector.py` to train the model, validate it, and test it on a sample image.
+- Ensure the nuScenes dataset is downloaded and the path is set in `Baseline_YOLO/code`.
+- Run `create_dataset.py` to generate the YOLO dataset.
+- Customize training parameters in `traffic_cone_detector.py` as needed.
+- Run `traffic_cone_detector.py` to train the model, validate it, and test it on a sample image.
 
 #### Usage Example
 ```python
