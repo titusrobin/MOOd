@@ -36,7 +36,7 @@ insert link here
 
 ### 2. Data exploration and description
 
-Our project aims to evaluate the performance of different models in detecting objects that are partially obscured in natural settings, with a specific focus on traffic cones from the nuScenes dataset. NuScenes, an autonomous navigation dataset, includes various object classes; we selected traffic cones due to their symmetrical shape, immobility, and small size, which present unique challenges in complex scenes. To better understand our data and design effective experiments, we analyzed the visibility distribution of traffic cones—measured as the fraction of visible pixels across six camera feeds. In the NuScenes dataset, visibility levels are grouped into four bins: 0-40%, 40-60%, 60-80%, and 80-100%. For example, a cone with 80-100% visibility is nearly or fully visible. One specific question we aim to investigate based on this visualization is how we can design an experiment to test the effect of traffic cone visibility levels on model performance. Our initial analysis of visibility distribution helps in designing experiments to investigate this relationship.
+Our project aims to evaluate the performance of different models in detecting objects that are partially obscured in natural settings, with a specific focus on traffic cones from the nuScenes dataset. NuScenes, an autonomous navigation dataset, includes various object classes; we selected traffic cones due to their symmetrical shape, immobility, and small size, which present unique challenges in complex scenes. To better understand our data and design effective experiments, we analyzed the visibility distribution of traffic cones—measured as the fraction of visible pixels across six camera feeds. In the nuScenes dataset, visibility levels are grouped into four bins: 0-40%, 40-60%, 60-80%, and 80-100%. For example, a cone with 80-100% visibility is nearly or fully visible. One specific question we aim to investigate based on this visualization is how we can design an experiment to test the effect of traffic cone visibility levels on model performance. Our initial analysis of visibility distribution helps in designing experiments to investigate this relationship.
 
 ![Final_Updated](https://github.com/user-attachments/assets/502364c6-8e96-40bc-971f-0596e2a0905b)
 
@@ -46,7 +46,7 @@ Specifically, we examined 1,378 traffic cones from the nuScenes mini dataset, fi
 
 You will find the toolkit folder within the repository. The following steps is what the toolkit does:
 
-- Loads the Nuscenes Dataset using the nuscenes devkit
+- Loads the nuScenes Dataset using the nuScenes devkit
 - Filters the dataset to only look for traffic cones
 - Saves the images which only contains traffic cones in a new file structure
 
@@ -55,7 +55,7 @@ Time note: 85 scenes take approximately 45 mins to filter.
 ### 4. YOLO Baseline Model Implementation
 You will find the YOLO Baseline Model folder within the repository. The following steps is what it achieves:
 
-- Loads the Nuscenes Mini Dataset using the nuscenes devkit
+- Loads the nuScenes Mini Dataset using the nuScenes devkit
 - Filters the dataset to only look for traffic cones
 - Saves the images which only contains traffic cones in a new file structure
 - Train and test YOLO Model on filtered images
