@@ -53,6 +53,7 @@ The key findings from our analysis include:
 - **Visibility Distribution**: Our analysis of the 1,378 traffic cones in the nuScenes mini dataset revealed a significant imbalance in visibility. Most cones (74%) were fully or mostly visible (80-100% visibility), while a much smaller proportion (2%) were partially occluded (40-60% visibility). The remainder of the cones fell into the 0-40% or 60-80% visibility bins, with 19% and 5%, respectively.  
 - **Challenges with Occlusion**: The dataset shows that while most cones are highly visible, partial occlusion is less frequently represented. This suggests that while models may perform well when cones are fully visible, they may struggle in real-world environments where occlusions are more common.  
 - **Data Imbalance**: The underrepresentation of partially occluded cones (especially in the 40-60% visibility range) presents a challenge for training robust models. We are exploring methods to balance the dataset to ensure more realistic evaluation of model performance across different visibility conditions.  
+
 This analysis highlights the importance of balanced datasets to ensure reliable detection in real-world scenarios, particularly when occlusion is present. For more detailed information on the dataset composition and methodology, refer to the **Data Overview** section of the write-up.
 
 ### 4. YOLO Baseline Model Implementation
