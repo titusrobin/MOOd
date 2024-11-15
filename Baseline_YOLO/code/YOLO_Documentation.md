@@ -82,3 +82,13 @@ plt.imshow(results.plot())
 plt.axis("off")
 plt.show()
 ```
+
+### Troubleshooting
+
+- **GPU Not Detected**: Ensure you have a compatible NVIDIA GPU and CUDA installed.
+- **Data Not Found**: Confirm that the nuScenes dataset is downloaded and `create_dataset.py` ran successfully.
+
+### Notes
+
+- Adjust parameters like `epochs`, `batch_size`, and `conf_threshold` in `traffic_cone_detector.py` to tune performance.
+- You may need to modify the paths to match your file system structure.
