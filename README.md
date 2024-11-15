@@ -24,15 +24,13 @@ Driving Questions:
 
 This section describes what is within this repository and our deliverables for the Fall 2024 Semester. 
 
-1. Literature Review
-2. Data exploration and description
+1. Write Up: INSERT LINK HERE
 3. Dataset Prep Toolkit: Dataset filtering and saving
 4. YOLO Baseline Model Implementation: Takes dataset, prepares for YOLO model, trains and tests data
 
 
-### 1. Literature Review 
-
-insert link here 
+### 1. Write Up
+INSERT LINK HERE
 
 ### 2. Data Introduction and Exploration
 
@@ -55,12 +53,23 @@ You will find the toolkit folder within the repository. The following steps is w
 Time note: 85 scenes take approximately 45 mins to filter. 
 
 ### 4. YOLO Baseline Model Implementation
-You will find the YOLO Baseline Model folder within the repository. The following steps is what it achieves:
+You will find the YOLO Baseline Model folder within the repository called *Baseline_YOLO/code*. YOLO object detection model is used as baseline to detect traffic cones. It includes scripts to extract and prepare a dataset from the nuScenes dataset, as well as to train, validate, and use the detection model.
 
-- Loads the nuScenes Mini Dataset using the nuScenes devkit
-- Filters the dataset to only look for traffic cones
-- Saves the images which only contains traffic cones in a new file structure
-- Train and test YOLO Model on filtered images
+#### Files
+
+1. `create_dataset.py`: This script is responsible for extracting traffic cone data from the nuScenes dataset and preparing it for use with a YOLO object detection model.
+2. `traffic_cone_detector.py`: This script defines the `TrafficConeDetector` class, which is used for training, validating, and using the YOLO object detection model to detect traffic cones.
+
+## How to launch the project
+
+### Prepare Data
+
+### Baseline Model--YOLO
+#### Usage
+1. Ensure you have the nuScenes dataset downloaded and the path set in `create_dataset.py`.
+2. Run `create_dataset.py` to generate the YOLO dataset.
+3. Customize the training parameters in `traffic_cone_detector.py` as needed.
+4. Run `traffic_cone_detector.py` to train the model, validate it, and test it on a sample image or video.
 
 ## Next Steps
 
