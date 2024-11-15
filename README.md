@@ -25,22 +25,13 @@ Driving Questions:
 This section describes what is within this repository and our deliverables for the Fall 2024 Semester. 
 
 1. Write Up: INSERT LINK HERE
-3. Dataset Prep Toolkit: Dataset filtering and saving
+2. Dataset Prep Toolkit: Dataset filtering and saving
+3. Data Discussion and Results
 4. YOLO Baseline Model Implementation: Takes dataset, prepares for YOLO model, trains and tests data
 
 
 ### 1. Write Up
 INSERT LINK HERE
-
-### 2. Data Introduction and Exploration
-
-Our project aims to evaluate the performance of different models in detecting objects that are partially obscured in natural settings, with a specific focus on traffic cones from the nuScenes dataset. NuScenes is a comprehensive autonomous driving research dataset. It’s got 1,000 20-second urban driving scenes collected in Boston and Singapore, featuring synchronized sensor data from 6 cameras, 1 LiDAR, 5 RADAR sensors, GPS, and IMU (Inertial Measurement Unit - helps with camera movement and orientation data), which helps capture orientation data for accurate scene understanding. They provide all cameras, LiDAR, RADAR and camera intrinsic and extrinsic data across dozens of objects per scene. The camera data expands over 1.4 million images at 2Hz (twice per second), including annotations from 23 object classes (incl. cars, pedestrians, bicycles) that were annotated by humans. NuScenes is a benchmark dataset for many pioneering research models on multi-view object detection, presenting experimentation opportunities like assessing whether the number of images improves detection accuracy, amongst other options as mentioned in the proposal above. 
-
-Among 23 object classes, we selected traffic cones due to their symmetrical shape, immobility, and small size, which present unique challenges in complex scenes. To better understand our data and design effective experiments, we analyzed the visibility distribution of traffic cones—measured as the fraction of visible pixels across six camera feeds. In the nuScenes dataset, visibility levels are grouped into four bins: 0-40%, 40-60%, 60-80%, and 80-100%. For example, a cone with 80-100% visibility is nearly or fully visible. One specific question we aim to investigate based on this visualization is how we can design an experiment to test the effect of traffic cone visibility levels on model performance.
-
-![Final_Updated](https://github.com/user-attachments/assets/502364c6-8e96-40bc-971f-0596e2a0905b)
-
-Specifically, we examined 1,378 traffic cones from the nuScenes mini dataset, finding that 74% fall in the 80-100% visibility bin, indicating most cones are highly visible. In contrast, 19% are in the 0-40% bin, 2% in the 40-60% bin, and 5% in the 60-80% bin. These findings reveal an imbalance in visibility levels, with a concentration of cones in the highest visibility bin. The predominance of highly visible cones (74%) enables our model to learn full representations of the data, supporting broader research goals. However, to ensure a balanced approach in studying visibility effects on model performance, we may need to subset the dataset to align with the number of cones in the smallest visibility bin (40-60%).
 
 ### 2. Dataset Prep Toolkit 
 
@@ -52,7 +43,17 @@ You will find the toolkit folder within the repository. The following steps is w
 
 Time note: 85 scenes take approximately 45 mins to filter. 
 
-### 3. YOLO Baseline Model Implementation
+### 3. Data Discussion and Results
+
+Our project aims to evaluate the performance of different models in detecting objects that are partially obscured in natural settings, with a specific focus on traffic cones from the nuScenes dataset. NuScenes is a comprehensive autonomous driving research dataset. It’s got 1,000 20-second urban driving scenes collected in Boston and Singapore, featuring synchronized sensor data from 6 cameras, 1 LiDAR, 5 RADAR sensors, GPS, and IMU (Inertial Measurement Unit - helps with camera movement and orientation data), which helps capture orientation data for accurate scene understanding. They provide all cameras, LiDAR, RADAR and camera intrinsic and extrinsic data across dozens of objects per scene. The camera data expands over 1.4 million images at 2Hz (twice per second), including annotations from 23 object classes (incl. cars, pedestrians, bicycles) that were annotated by humans. NuScenes is a benchmark dataset for many pioneering research models on multi-view object detection, presenting experimentation opportunities like assessing whether the number of images improves detection accuracy, amongst other options as mentioned in the proposal above. 
+
+Among 23 object classes, we selected traffic cones due to their symmetrical shape, immobility, and small size, which present unique challenges in complex scenes. To better understand our data and design effective experiments, we analyzed the visibility distribution of traffic cones—measured as the fraction of visible pixels across six camera feeds. In the nuScenes dataset, visibility levels are grouped into four bins: 0-40%, 40-60%, 60-80%, and 80-100%. For example, a cone with 80-100% visibility is nearly or fully visible. One specific question we aim to investigate based on this visualization is how we can design an experiment to test the effect of traffic cone visibility levels on model performance.
+
+![Final_Updated](https://github.com/user-attachments/assets/502364c6-8e96-40bc-971f-0596e2a0905b)
+
+Specifically, we examined 1,378 traffic cones from the nuScenes mini dataset, finding that 74% fall in the 80-100% visibility bin, indicating most cones are highly visible. In contrast, 19% are in the 0-40% bin, 2% in the 40-60% bin, and 5% in the 60-80% bin. These findings reveal an imbalance in visibility levels, with a concentration of cones in the highest visibility bin. The predominance of highly visible cones (74%) enables our model to learn full representations of the data, supporting broader research goals. However, to ensure a balanced approach in studying visibility effects on model performance, we may need to subset the dataset to align with the number of cones in the smallest visibility bin (40-60%).
+
+### 4. YOLO Baseline Model Implementation
 You will find the YOLO Baseline Model folder within the repository called `Baseline_YOLO/code`. YOLO object detection model is used as baseline to detect traffic cones. It includes scripts to extract and prepare a dataset from the nuScenes dataset, as well as to train, validate, and use the detection model.
 
 #### Files
@@ -62,9 +63,9 @@ You will find the YOLO Baseline Model folder within the repository called `Basel
 
 ## How to launch the project
 
-### Prepare Data
+### 1. Prepare Data
 
-### Baseline Model--YOLO
+### 2. Baseline Model--YOLO
 #### Usage
 1. Ensure you have the nuScenes dataset downloaded and the path set in `Baseline_YOLO/code/create_dataset.py`.
 2. Run `Baseline_YOLO/code/create_dataset.py` to generate the YOLO dataset.
