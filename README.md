@@ -46,6 +46,7 @@ Here is the file structure of our software package:
 > 
 > - communications/
 >   └── 11_8_capstone_class.pdf
+>   └── Write-Up Capstone.pdf
 > ```
 
 ## II. Semester Contributions and Findings
