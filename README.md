@@ -65,7 +65,7 @@ You will find the YOLO Baseline Model folder within the repository called `Basel
 
 1. `create_dataset.py`: This script is responsible for extracting traffic cone data from the nuScenes dataset and preparing it for use with a YOLO object detection model.
 2. `traffic_cone_detector.py`: This script defines the `TrafficConeDetector` class, which is used for training, validating, and using the YOLO object detection model to detect traffic cones.
-3. More detail introductions of each file is included called `YOLO_Documentation.txt` under the folder `Baseline_YOLO/code`.
+3. More detail introductions of each file is included called `YOLO_Documentation.md` under the folder `Baseline_YOLO/code`.
 
 ## III. How to launch the project
 
