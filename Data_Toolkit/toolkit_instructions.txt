@@ -1,1 +1,0 @@
-The toolkit uses the Nuscenes dataset. It is crucial to install the nuscenes devkit and dataset in an organized manner for the code to work properly. 
