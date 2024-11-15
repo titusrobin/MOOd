@@ -12,7 +12,7 @@
 - [III. How to Launch the Project](#iii-how-to-launch-the-project)
   - [1. Prepare Data](#1-prepare-data)
   - [2. Baseline Model--YOLO](#2-baseline-model--yolo)
-- [IV. Next Steps](#next-steps)
+- [IV. Next Steps](#iv-next-steps)
 
 ## I. Project Overview 
 
