@@ -8,17 +8,7 @@ This project will develop an object detection tool to identify partially obscure
 
 To address this, we will first establish a baseline model, single-view model. We can then advance tomulti-view models like DETR3D, which integrates multiple perspectives to the object detection method. Our approach includes: filtering labeled to obscured objects of interest, implementing the baseline and multi-view models, analysis of methods and performance answering stakeholder driven questions.
 
-### Motivation 
-Hidden objects pose significant risks in critical environments, where not finding a partially obscured object can have high-stakes consequences. Some of these high stakes scenarios include: autonoumous car navigation, landmine detection, and search and rescue missions. Traditional object detection methods struggle in these scenarios, often requiring multiple data collects, with the possibility of still not finding the objects due to obscurement. Current multi-view methods are computationally heavy requiring 3D point clouds or rendered scenes. Therefore, this project introduces a '3D interpretation of scenes' to enhance detection accuracy without the heavy overhead of full 3D reconstruction, providing an efficient solution for real-world environments.
-
-### Goal
-Develop a model that can accurately detect and classify partially obscured objects by integrating multiple images of a scene, leveraging the spatial relationships among these views for robust detection.
-
-Driving Questions:
-- To what extent can multi-view data improve detection accuracy for partially obscured objects?
-- How does varying the level of object obscurity impact detection accuracy in multi-view models?
-- What is the minimum number of scene views required to achieve reliable detection?
-- Which object features most significantly contribute to accurate detection?
+You can find further discussion within our write-up document linked below.
 
 ## II. Semester Contributions and Findings
 
