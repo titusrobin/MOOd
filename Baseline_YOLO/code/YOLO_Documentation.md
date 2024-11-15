@@ -19,8 +19,8 @@ This script extracts traffic cone data from the nuScenes mini dataset and prepar
 2. Run the script to create the `cone_dataset` directory with training and validation data.
 
 ```python
-from create_dataset import create_yolo_dataset
 from nuscenes import NuScenes
+from create_dataset import create_yolo_dataset
 
 # Set the path to your nuScenes dataset
 dataroot = "../data/v1.0-mini"  
@@ -53,15 +53,6 @@ This script defines the `TrafficConeDetector` class, which is used for training,
 
 ```python
 from traffic_cone_detector import TrafficConeDetector
-
-# Set the path to your nuScenes dataset
-dataroot = "../data/v1.0-mini"  
-
-# Initialize the NuScenes instance
-nusc = NuScenes(version="v1.0-mini", dataroot=dataroot, verbose=True)
-
-# Create the YOLO dataset
-create_yolo_dataset(nusc)
 
 # Initialize detector
 detector = TrafficConeDetector("cone_dataset/dataset.yaml")
