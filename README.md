@@ -86,6 +86,21 @@ You will find the YOLO Baseline Model folder within the repository called `Basel
 ## III. How to launch the project
 
 ### 1. Prepare Data
+   - Download the nuScenes dataset from the [nuScenes website](https://www.nuscenes.org/).
+   - Extract the dataset and place it in the root directory (outside the `MOOd` folder) to match the expected folder structure:
+     ```
+     project_root/
+     ├── v1.0-trainval/    # Folder containing dataset images and related files
+     └── MOOd/             # Folder containing toolkit and scripts
+     ```
+   - Ensure that `v1.0-trainval` holds the dataset and `MOOd/nuscenes` holds the DevKit.
+   - Open a terminal, navigate to the `MOOd` folder, and execute:
+     ```bash
+     python load_data.py
+     ```
+   - This will load and filter the nuScenes data according to the configurations in `load_data.py`.
+
+For more information, please see the [Toolkit README](MOOd/toolkit_instructions.txt).
 
 ### 2. Baseline Model--YOLO
 #### Prerequisites
