@@ -53,6 +53,12 @@ You will find the toolkit folder within the repository. The following steps is w
 Time note: 85 scenes take approximately 45 mins to filter. 
 
 ### 4. YOLO Baseline Model Implementation
+You will find the YOLO Baseline Model folder within the repository. The following steps is what it achieves:
+
+- Loads the Nuscenes Mini Dataset using the nuscenes devkit
+- Filters the dataset to only look for traffic cones
+- Saves the images which only contains traffic cones in a new file structure
+- Train and test YOLO Model on filtered images
 
 ## Next Steps
 
