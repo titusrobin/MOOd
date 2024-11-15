@@ -45,8 +45,9 @@ Time note: 85 scenes take approximately 45 mins to filter.
 
 ### 3. Data Discussion and Results
 
-In this project, we focused on analyzing the nuScenes dataset, specifically examining the visibility distribution of traffic cones under varying levels of occlusion. 
+To evaluate how model performance varies across different levels of occlusion, we analyzed the visibility distribution of traffic cones within the nuScenes dataset. Due to the large size of the full dataset and the computational limitations we face, we chose to conduct our experiments using the mini dataset, which is a smaller but representative subset of the full nuScenes collection. This allowed us to perform meaningful analyses within our resource constraints while maintaining relevance to the overall dataset’s characteristics. The mini dataset mirrors the visibility distribution found in the complete nuScenes dataset, making it a practical choice for gaining insights into model performance.  
 
+Our analysis of the 1,378 traffic cones in the mini dataset revealed the following visibility distribution:  
 ![Final_Updated](https://github.com/user-attachments/assets/502364c6-8e96-40bc-971f-0596e2a0905b)
 
 The key findings from our analysis include:  
