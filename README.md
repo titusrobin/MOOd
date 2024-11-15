@@ -52,14 +52,14 @@ Here is the file structure of our software package:
 
 This section describes what is within this repository and our deliverables for the Fall 2024 Semester. 
 
-1. Write Up: INSERT LINK HERE
+1. [Write Up](https://github.com/titusrobin/MOOd/blob/main/communications/Write-Up%20Capstone.pdf)
 2. Dataset Prep Toolkit: Dataset filtering and saving
 3. Data Discussion and Results
 4. YOLO Baseline Model Implementation: Takes dataset, prepares for YOLO model, trains and tests data
 
 
 ### 1. Write Up
-Detailed write-up can be found [here](https://github.com/titusrobin/MOOd/blob/main/communications/Write-Up%20Capstone.pdf)
+Detailed write-up can be found [here](https://github.com/titusrobin/MOOd/blob/main/communications/Write-Up%20Capstone.pdf).
 
 The write-up provides an in-depth exploration of the project, organized into the following sections: 
 
