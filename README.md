@@ -65,6 +65,7 @@ You will find the YOLO Baseline Model folder within the repository called `Basel
 
 1. `create_dataset.py`: This script is responsible for extracting traffic cone data from the nuScenes dataset and preparing it for use with a YOLO object detection model.
 2. `traffic_cone_detector.py`: This script defines the `TrafficConeDetector` class, which is used for training, validating, and using the YOLO object detection model to detect traffic cones.
+3. More detail introductions of each file is included called `YOLO_Documentation.txt` under the folder `Baseline_YOLO/code`.
 
 ## III. How to launch the project
 
@@ -72,11 +73,45 @@ You will find the YOLO Baseline Model folder within the repository called `Basel
 
 ### 2. Baseline Model--YOLO
 #### Usage
-1. Ensure you have the nuScenes dataset downloaded and the path set in `Baseline_YOLO/code/create_dataset.py`.
-2. Run `Baseline_YOLO/code/create_dataset.py` to generate the YOLO dataset.
-3. Customize the training parameters in `Baseline_YOLO/code/traffic_cone_detector.py` as needed.
-4. Run `Baseline_YOLO/code/traffic_cone_detector.py` to train the model, validate it, and test it on a sample image or video.
+1. Ensure you have the nuScenes dataset downloaded and the path set in `Baseline_YOLO/code`.
+2. Run `create_dataset.py` to generate the YOLO dataset.
+4. Customize the training parameters in `traffic_cone_detector.py` as needed.
+5. Run `traffic_cone_detector.py` to train the model, validate it, and test it on a sample image.
 
+#### Usage Example
+```python
+from create_dataset import create_yolo_dataset
+from nuscenes import NuScenes
+from traffic_cone_detector import TrafficConeDetector
+
+# Set the path to your nuScenes dataset
+dataroot = "../data/v1.0-mini"  
+
+# Initialize the NuScenes instance
+nusc = NuScenes(version="v1.0-mini", dataroot=dataroot, verbose=True)
+
+# Create the YOLO dataset
+create_yolo_dataset(nusc)
+
+# Initialize detector
+detector = TrafficConeDetector("cone_dataset/dataset.yaml")
+
+# Train the model
+detector.train(epochs=5)
+
+# Validate the model
+val_results = detector.validate()
+
+# Predict on a test image
+test_image = "cone_dataset/val/images/000000.jpg"
+results = detector.predict(test_image)
+
+# Display the results
+plt.figure(figsize=(12, 12))
+plt.imshow(results.plot())
+plt.axis("off")
+plt.show()
+```
 ## Next Steps
 
 #### 1. Train and test YOLO model on the full filtered dataset
