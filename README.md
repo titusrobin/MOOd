@@ -2,6 +2,18 @@
 #### Duke University MIDS Capstone Project 2024-2025
 **Authors:** Robin Arun, Katie Hucker, Afraa Noureen, Jiayi Zhou
 
+## Table of Contents
+- [I. Project Overview](#i-project-overview)
+- [II. Semester Contributions and Findings](#ii-semester-contributions-and-findings)
+  - [1. Write Up](#1-write-up)
+  - [2. Dataset Prep Toolkit](#2-dataset-prep-toolkit)
+  - [3. Data Discussion and Results](#3-data-discussion-and-results)
+  - [4. YOLO Baseline Model Implementation](#4-yolo-baseline-model-implementation)
+- [III. How to Launch the Project](#iii-how-to-launch-the-project)
+  - [1. Prepare Data](#1-prepare-data)
+  - [2. Baseline Model--YOLO](#2-baseline-model--yolo)
+- [Next Steps](#next-steps)
+
 ## I. Project Overview 
 
 This project will develop an object detection tool to identify partially obscured objects while leveraging multiple images or views of the object. Current single-view detection methods lack in the ability to render scene contextualization, or reference images near by into its object detection capabilities. We believe by using multi-view modeling techniques obscured objects can be identified quicker, more accurately, and with less dense data. Multi-view models are more computationally complex, therefore, we wish to understand the relationship and improvement when compared to single view detection methods. 
