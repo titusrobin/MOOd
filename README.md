@@ -44,6 +44,14 @@ Based on the visualization, our analysis of 1,378 traffic cones from the nuScene
 
 ### 3. Dataset Prep Toolkit 
 
+You will find the toolkit folder within the repository. The following steps is what the toolkit does:
+
+- Loads the Nuscenes Dataset using the nuscenes devkit
+- Filters the dataset to only look for traffic cones
+- Saves the images which only contains traffic cones in a new file structure
+
+Time note: 85 scenes take approximately 45 mins to filter. 
+
 ### 4. YOLO Baseline Model Implementation
 
 ## Next Steps
