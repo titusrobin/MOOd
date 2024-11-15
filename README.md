@@ -72,6 +72,16 @@ You will find the YOLO Baseline Model folder within the repository called `Basel
 ### 1. Prepare Data
 
 ### 2. Baseline Model--YOLO
+#### Prerequisites
+Ensure you have the following installed:
+- Python 3.8+
+- `torch`, `opencv-python`, `Pillow`, `seaborn`, `matplotlib`, and `ultralytics` packages (for YOLOv8)
+
+Install the required packages:
+```bash
+pip install torch ultralytics opencv-python pillow seaborn matplotlib
+```
+
 #### Usage
 1. Ensure you have the nuScenes dataset downloaded and the path set in `Baseline_YOLO/code`.
 2. Run `create_dataset.py` to generate the YOLO dataset.
