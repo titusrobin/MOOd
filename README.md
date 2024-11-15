@@ -12,7 +12,7 @@
 - [III. How to Launch the Project](#iii-how-to-launch-the-project)
   - [1. Prepare Data](#1-prepare-data)
   - [2. Baseline Model--YOLO](#2-baseline-model--yolo)
-- [Next Steps](#next-steps)
+- [IV. Next Steps](#next-steps)
 
 ## I. Project Overview 
 
@@ -173,7 +173,7 @@ plt.imshow(results.plot())
 plt.axis("off")
 plt.show()
 ```
-## Next Steps
+## IV. Next Steps
 
 #### 1. Train and test YOLO model on the full filtered dataset
 
