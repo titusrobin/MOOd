@@ -53,7 +53,7 @@ You will find the toolkit folder within the repository. The following steps is w
 Time note: 85 scenes take approximately 45 mins to filter. 
 
 ### 4. YOLO Baseline Model Implementation
-You will find the YOLO Baseline Model folder within the repository called *Baseline_YOLO/code*. YOLO object detection model is used as baseline to detect traffic cones. It includes scripts to extract and prepare a dataset from the nuScenes dataset, as well as to train, validate, and use the detection model.
+You will find the YOLO Baseline Model folder within the repository called `Baseline_YOLO/code`. YOLO object detection model is used as baseline to detect traffic cones. It includes scripts to extract and prepare a dataset from the nuScenes dataset, as well as to train, validate, and use the detection model.
 
 #### Files
 
@@ -66,10 +66,10 @@ You will find the YOLO Baseline Model folder within the repository called *Basel
 
 ### Baseline Model--YOLO
 #### Usage
-1. Ensure you have the nuScenes dataset downloaded and the path set in `create_dataset.py`.
-2. Run `create_dataset.py` to generate the YOLO dataset.
-3. Customize the training parameters in `traffic_cone_detector.py` as needed.
-4. Run `traffic_cone_detector.py` to train the model, validate it, and test it on a sample image or video.
+1. Ensure you have the nuScenes dataset downloaded and the path set in `Baseline_YOLO/code/create_dataset.py`.
+2. Run `Baseline_YOLO/code/create_dataset.py` to generate the YOLO dataset.
+3. Customize the training parameters in `Baseline_YOLO/code/traffic_cone_detector.py` as needed.
+4. Run `Baseline_YOLO/code/traffic_cone_detector.py` to train the model, validate it, and test it on a sample image or video.
 
 ## Next Steps
 
