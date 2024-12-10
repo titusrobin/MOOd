@@ -87,7 +87,7 @@ To evaluate how model performance varies across different levels of occlusion, w
 
 Our analysis of the 1,378 traffic cones in the mini dataset revealed the following visibility distribution:  
 
-![Final_Updated](https://github.com/user-attachments/assets/5698833e-496b-49be-915e-a7692971d640)
+![Final_Updated](https://github.com/user-attachments/assets/1dea28ff-62db-45b7-b6c1-83251e0d8825)
 
 The key findings from our analysis include:  
 - **Visibility Distribution**: Our analysis of the 1,378 traffic cones in the nuScenes mini dataset revealed a significant imbalance in visibility. Most cones (74%) were fully or mostly visible (80-100% visibility), while a much smaller proportion (2%) were partially occluded (40-60% visibility). The remainder of the cones fell into the 0-40% or 60-80% visibility bins, with 19% and 5%, respectively.  
